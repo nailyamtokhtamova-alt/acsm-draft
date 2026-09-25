@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: OWNER/REPOSITORY
+  repo: nailyamtokhtamova-alt/acsm-draft
   branch: main
 media_folder: media
 public_folder: /media
