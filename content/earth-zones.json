@@ -1,0 +1,51 @@
+[
+  {
+    "id": "EE1",
+    "name": "Tien Shan Mountains",
+    "ru": "",
+    "icon": "🏔️",
+    "accent": "#edc17b",
+    "desc": "Ледники, луга и горные леса",
+    "areas": [
+      [
+        "EE1.1",
+        "Glaciers"
+      ],
+      [
+        "EE1.2",
+        "Alpine Tundra"
+      ],
+      [
+        "EE1.3",
+        "Montane Coniferous Forests"
+      ]
+    ]
+  },
+  {
+    "id": "EE2",
+    "name": "Aral Sea",
+    "ru": "",
+    "icon": "🌊",
+    "accent": "#91ccec",
+    "desc": "Аральское море и его восстановление",
+    "areas": []
+  },
+  {
+    "id": "EE3",
+    "name": "Tropical Rainforest",
+    "ru": "",
+    "icon": "🌿",
+    "accent": "#a7df9e",
+    "desc": "Растения и животные тропического леса",
+    "areas": []
+  },
+  {
+    "id": "EE4",
+    "name": "Behind the Lens",
+    "ru": "За объективом",
+    "icon": "📷",
+    "accent": "#d8ae88",
+    "desc": "Фотография дикой природы",
+    "areas": []
+  }
+]

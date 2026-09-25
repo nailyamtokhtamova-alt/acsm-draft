@@ -1,0 +1,576 @@
+backend:
+  name: github
+  repo: OWNER/REPOSITORY
+  branch: main
+media_folder: media
+public_folder: /media
+collections:
+- name: galleries
+  label: Галереи
+  files:
+  - name: cosmic
+    label: Cosmic Frontiers · карточки
+    file: content/cosmic-frontiers.json
+    fields:
+    - name: zones
+      label: Названия зон
+      widget: object
+      fields:
+      - name: CF1
+        label: CF1
+        widget: object
+        fields: &id001
+        - name: en
+          label: Название EN
+          widget: string
+        - name: ru
+          label: Официальный перевод RU
+          widget: string
+      - name: CF2
+        label: CF2
+        widget: object
+        fields: *id001
+      - name: CF3
+        label: CF3
+        widget: object
+        fields: *id001
+      - name: CF4
+        label: CF4
+        widget: object
+        fields: *id001
+      - name: CF5
+        label: CF5
+        widget: object
+        fields: *id001
+      - name: CF6
+        label: CF6
+        widget: object
+        fields: *id001
+      - name: CF7
+        label: CF7
+        widget: object
+        fields: *id001
+    - name: items
+      label: Экспонаты
+      widget: list
+      summary: '{{fields.code}} · {{fields.ru}}'
+      fields:
+      - name: code
+        label: Код
+        widget: string
+      - name: zone
+        label: Код зоны
+        widget: string
+      - name: en
+        label: Название EN
+        widget: string
+      - name: ru
+        label: Название RU
+        widget: string
+      - name: summaryRu
+        label: Краткое описание RU
+        widget: text
+        required: false
+      - name: actionsRu
+        label: Действия посетителя RU
+        widget: text
+        required: false
+      - name: learnRu
+        label: Что узнает RU
+        widget: text
+        required: false
+      - name: detailRu
+        label: Для эдьюкейтора RU
+        widget: text
+        required: false
+      - name: story
+        label: Описание EN
+        widget: text
+        required: false
+      - name: actions
+        label: Действия EN
+        widget: list
+        required: false
+      - name: learn
+        label: Результат EN
+        widget: text
+        required: false
+      - name: type
+        label: Тип
+        widget: string
+        required: false
+      - name: remarks
+        label: Примечания
+        widget: text
+        required: false
+      - name: ref
+        label: Источник
+        widget: string
+        required: false
+      - name: image
+        label: Изображение / встроенные данные
+        widget: text
+        required: false
+      - name: panels
+        label: Тексты панелей
+        widget: list
+        required: false
+        fields:
+        - name: code
+          label: Код
+          widget: string
+        - name: type
+          label: Тип
+          widget: string
+        - name: ru
+          label: Текст RU
+          widget: text
+        - name: en
+          label: Текст EN
+          widget: text
+        - name: ref
+          label: Источник
+          widget: string
+    - name: plan
+      label: Встроенные изображения и схема
+      widget: text
+      required: false
+  - name: earth_zones
+    label: Earth Explorers · зоны
+    file: content/earth-zones.json
+    fields:
+    - name: zones
+      label: Зоны
+      widget: list
+      root: true
+      fields:
+      - name: id
+        label: Код
+        widget: string
+      - name: name
+        label: Название EN
+        widget: string
+      - name: ru
+        label: Официальный перевод RU
+        widget: string
+        required: false
+      - name: icon
+        label: Значок
+        widget: string
+        required: false
+      - name: accent
+        label: Цвет
+        widget: string
+        required: false
+      - name: desc
+        label: Описание
+        widget: text
+        required: false
+      - name: areas
+        label: Подзоны
+        widget: list
+        required: false
+  - name: earth_exhibits
+    label: Earth Explorers · экспонаты
+    file: content/earth-exhibits.json
+    fields:
+    - name: exhibits
+      label: Экспонаты
+      widget: list
+      root: true
+      summary: '{{fields.id}} · {{fields.ru}}'
+      fields:
+      - name: id
+        label: Код
+        widget: string
+      - name: en
+        label: Название EN
+        widget: string
+      - name: ru
+        label: Название RU
+        widget: string
+      - name: icon
+        label: Значок
+        widget: string
+        required: false
+      - name: lead
+        label: Описание
+        widget: text
+      - name: do
+        label: Что делает посетитель
+        widget: text
+      - name: learn
+        label: Что узнаёт
+        widget: text
+  - name: earth_guides
+    label: Earth Explorers · материалы эдьюкейтора
+    file: content/earth-guides.json
+    fields:
+    - name: EE1.1.1
+      label: EE1.1.1
+      widget: object
+      fields:
+      - name: actions
+        label: Подсказки посетителю
+        widget: list
+        required: false
+      - name: matrix
+        label: Матрица
+        widget: text
+        required: false
+      - name: panels
+        label: Панели
+        widget: list
+        required: false
+    - name: EE1.1.2
+      label: EE1.1.2
+      widget: object
+      fields:
+      - name: actions
+        label: Подсказки посетителю
+        widget: list
+        required: false
+      - name: matrix
+        label: Матрица
+        widget: text
+        required: false
+      - name: panels
+        label: Панели
+        widget: list
+        required: false
+    - name: EE1.1.3
+      label: EE1.1.3
+      widget: object
+      fields:
+      - name: actions
+        label: Подсказки посетителю
+        widget: list
+        required: false
+      - name: matrix
+        label: Матрица
+        widget: text
+        required: false
+      - name: panels
+        label: Панели
+        widget: list
+        required: false
+    - name: EE1.1.4
+      label: EE1.1.4
+      widget: object
+      fields:
+      - name: actions
+        label: Подсказки посетителю
+        widget: list
+        required: false
+      - name: matrix
+        label: Матрица
+        widget: text
+        required: false
+      - name: panels
+        label: Панели
+        widget: list
+        required: false
+    - name: EE1.2.1
+      label: EE1.2.1
+      widget: object
+      fields:
+      - name: actions
+        label: Подсказки посетителю
+        widget: list
+        required: false
+      - name: matrix
+        label: Матрица
+        widget: text
+        required: false
+      - name: panels
+        label: Панели
+        widget: list
+        required: false
+    - name: EE1.2.2
+      label: EE1.2.2
+      widget: object
+      fields:
+      - name: actions
+        label: Подсказки посетителю
+        widget: list
+        required: false
+      - name: matrix
+        label: Матрица
+        widget: text
+        required: false
+      - name: panels
+        label: Панели
+        widget: list
+        required: false
+    - name: EE1.2.3
+      label: EE1.2.3
+      widget: object
+      fields:
+      - name: actions
+        label: Подсказки посетителю
+        widget: list
+        required: false
+      - name: matrix
+        label: Матрица
+        widget: text
+        required: false
+      - name: panels
+        label: Панели
+        widget: list
+        required: false
+    - name: EE1.3.1
+      label: EE1.3.1
+      widget: object
+      fields:
+      - name: actions
+        label: Подсказки посетителю
+        widget: list
+        required: false
+      - name: matrix
+        label: Матрица
+        widget: text
+        required: false
+      - name: panels
+        label: Панели
+        widget: list
+        required: false
+    - name: EE1.3.2
+      label: EE1.3.2
+      widget: object
+      fields:
+      - name: actions
+        label: Подсказки посетителю
+        widget: list
+        required: false
+      - name: matrix
+        label: Матрица
+        widget: text
+        required: false
+      - name: panels
+        label: Панели
+        widget: list
+        required: false
+    - name: EE1.3.3
+      label: EE1.3.3
+      widget: object
+      fields:
+      - name: actions
+        label: Подсказки посетителю
+        widget: list
+        required: false
+      - name: matrix
+        label: Матрица
+        widget: text
+        required: false
+      - name: panels
+        label: Панели
+        widget: list
+        required: false
+    - name: EE2.1
+      label: EE2.1
+      widget: object
+      fields:
+      - name: actions
+        label: Подсказки посетителю
+        widget: list
+        required: false
+      - name: matrix
+        label: Матрица
+        widget: text
+        required: false
+      - name: panels
+        label: Панели
+        widget: list
+        required: false
+    - name: EE2.2
+      label: EE2.2
+      widget: object
+      fields:
+      - name: actions
+        label: Подсказки посетителю
+        widget: list
+        required: false
+      - name: matrix
+        label: Матрица
+        widget: text
+        required: false
+      - name: panels
+        label: Панели
+        widget: list
+        required: false
+    - name: EE2.3
+      label: EE2.3
+      widget: object
+      fields:
+      - name: actions
+        label: Подсказки посетителю
+        widget: list
+        required: false
+      - name: matrix
+        label: Матрица
+        widget: text
+        required: false
+      - name: panels
+        label: Панели
+        widget: list
+        required: false
+    - name: EE2.4
+      label: EE2.4
+      widget: object
+      fields:
+      - name: actions
+        label: Подсказки посетителю
+        widget: list
+        required: false
+      - name: matrix
+        label: Матрица
+        widget: text
+        required: false
+      - name: panels
+        label: Панели
+        widget: list
+        required: false
+    - name: EE2.5
+      label: EE2.5
+      widget: object
+      fields:
+      - name: actions
+        label: Подсказки посетителю
+        widget: list
+        required: false
+      - name: matrix
+        label: Матрица
+        widget: text
+        required: false
+      - name: panels
+        label: Панели
+        widget: list
+        required: false
+    - name: EE3.1
+      label: EE3.1
+      widget: object
+      fields:
+      - name: actions
+        label: Подсказки посетителю
+        widget: list
+        required: false
+      - name: matrix
+        label: Матрица
+        widget: text
+        required: false
+      - name: panels
+        label: Панели
+        widget: list
+        required: false
+    - name: EE3.2
+      label: EE3.2
+      widget: object
+      fields:
+      - name: actions
+        label: Подсказки посетителю
+        widget: list
+        required: false
+      - name: matrix
+        label: Матрица
+        widget: text
+        required: false
+      - name: panels
+        label: Панели
+        widget: list
+        required: false
+    - name: EE3.3
+      label: EE3.3
+      widget: object
+      fields:
+      - name: actions
+        label: Подсказки посетителю
+        widget: list
+        required: false
+      - name: matrix
+        label: Матрица
+        widget: text
+        required: false
+      - name: panels
+        label: Панели
+        widget: list
+        required: false
+    - name: EE3.4
+      label: EE3.4
+      widget: object
+      fields:
+      - name: actions
+        label: Подсказки посетителю
+        widget: list
+        required: false
+      - name: matrix
+        label: Матрица
+        widget: text
+        required: false
+      - name: panels
+        label: Панели
+        widget: list
+        required: false
+    - name: EE3.5
+      label: EE3.5
+      widget: object
+      fields:
+      - name: actions
+        label: Подсказки посетителю
+        widget: list
+        required: false
+      - name: matrix
+        label: Матрица
+        widget: text
+        required: false
+      - name: panels
+        label: Панели
+        widget: list
+        required: false
+    - name: EE4.1
+      label: EE4.1
+      widget: object
+      fields:
+      - name: actions
+        label: Подсказки посетителю
+        widget: list
+        required: false
+      - name: matrix
+        label: Матрица
+        widget: text
+        required: false
+      - name: panels
+        label: Панели
+        widget: list
+        required: false
+    - name: EE4.2
+      label: EE4.2
+      widget: object
+      fields:
+      - name: actions
+        label: Подсказки посетителю
+        widget: list
+        required: false
+      - name: matrix
+        label: Матрица
+        widget: text
+        required: false
+      - name: panels
+        label: Панели
+        widget: list
+        required: false
+    - name: EE4.3
+      label: EE4.3
+      widget: object
+      fields:
+      - name: actions
+        label: Подсказки посетителю
+        widget: list
+        required: false
+      - name: matrix
+        label: Матрица
+        widget: text
+        required: false
+      - name: panels
+        label: Панели
+        widget: list
+        required: false
