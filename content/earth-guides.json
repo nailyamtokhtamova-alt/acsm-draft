@@ -1,5 +1,6 @@
-{
-  "EE1.1.1": {
+[
+  {
+    "code": "EE1.1.1",
     "actions": [
       [
         "🐾",
@@ -50,7 +51,8 @@
       }
     ]
   },
-  "EE1.1.2": {
+  {
+    "code": "EE1.1.2",
     "actions": [
       [
         "📖",
@@ -69,7 +71,8 @@
       }
     ]
   },
-  "EE1.1.3": {
+  {
+    "code": "EE1.1.3",
     "actions": [
       [
         "🔄",
@@ -88,7 +91,8 @@
       }
     ]
   },
-  "EE1.1.4": {
+  {
+    "code": "EE1.1.4",
     "actions": [
       [
         "💧",
@@ -102,7 +106,8 @@
     "matrix": "Learn how the water cycle creates glaciers year-round in the cold climate of the Tien Shan mountains. Discover how those same glaciers lead to the formation of moraine lakes over time. Learn about the effects of climate change on moraine lakes and how they threaten downstream communities. Explore the monitoring and conservation efforts set in place to prevent mudflows occurring from the moraine lakes.",
     "panels": []
   },
-  "EE1.2.1": {
+  {
+    "code": "EE1.2.1",
     "actions": [
       [
         "📖",
@@ -133,7 +138,8 @@
       }
     ]
   },
-  "EE1.2.2": {
+  {
+    "code": "EE1.2.2",
     "actions": [
       [
         "📷",
@@ -176,7 +182,8 @@
       }
     ]
   },
-  "EE1.2.3": {
+  {
+    "code": "EE1.2.3",
     "actions": [
       [
         "🎮",
@@ -199,7 +206,8 @@
       }
     ]
   },
-  "EE1.3.1": {
+  {
+    "code": "EE1.3.1",
     "actions": [
       [
         "🔎",
@@ -230,7 +238,8 @@
       }
     ]
   },
-  "EE1.3.2": {
+  {
+    "code": "EE1.3.2",
     "actions": [
       [
         "👣",
@@ -249,7 +258,8 @@
       }
     ]
   },
-  "EE1.3.3": {
+  {
+    "code": "EE1.3.3",
     "actions": [
       [
         "📖",
@@ -272,7 +282,8 @@
       }
     ]
   },
-  "EE2.1": {
+  {
+    "code": "EE2.1",
     "actions": [
       [
         "👀",
@@ -282,7 +293,8 @@
     "matrix": "Learn how the drying of the Aral Sea occurred due to extensive irrigation projects during the Soviet era, primarily for cotton and rice farming. Witness the transformation of the Aral Sea from the 1950s to the 2020s, from a once drying sea to one that is recovering due to restoration efforts.",
     "panels": []
   },
-  "EE2.2": {
+  {
+    "code": "EE2.2",
     "actions": [
       [
         "🎮",
@@ -301,7 +313,8 @@
       }
     ]
   },
-  "EE2.3": {
+  {
+    "code": "EE2.3",
     "actions": [
       [
         "📖",
@@ -344,7 +357,8 @@
       }
     ]
   },
-  "EE2.4": {
+  {
+    "code": "EE2.4",
     "actions": [
       [
         "📖",
@@ -358,7 +372,8 @@
     "matrix": "Learn about how the drying of the Aral Sea has led to increased salinity levels and toxic dust storms. Discover the recent conservation and rehabilitation efforts on the Aral Sea: - The Kokaral Dam is a barrier built across the channel between the North and South Aral Sea to hold back and control the flow of water. The dam reduces salinity of the North Aral Sea and creates better conditions for fish to survive and return. - Drought-resistant vegetation native to Central Asia have been planted on the exposed seabed to stabilize the soil and prevent the toxic dust from being carried by the wind.",
     "panels": []
   },
-  "EE2.5": {
+  {
+    "code": "EE2.5",
     "actions": [
       [
         "📖",
@@ -409,7 +424,8 @@
       }
     ]
   },
-  "EE3.1": {
+  {
+    "code": "EE3.1",
     "actions": [
       [
         "👣",
@@ -424,7 +440,8 @@
       }
     ]
   },
-  "EE3.2": {
+  {
+    "code": "EE3.2",
     "actions": [
       [
         "🎥",
@@ -439,7 +456,8 @@
       }
     ]
   },
-  "EE3.3": {
+  {
+    "code": "EE3.3",
     "actions": [
       [
         "📷",
@@ -453,7 +471,8 @@
     "matrix": "Discover the various animals found in the rainforest and learn about their unique characteristics and features. The list of rainforest animals are as follows: - Jaguar (Panthera Onca ) - Toucan (Ramphastos toco ) - Sloth (Bradypus spp .) - Orangutan (Pongo spp. ) - Poison dart frog (Dendrobatoidea )",
     "panels": []
   },
-  "EE3.4": {
+  {
+    "code": "EE3.4",
     "actions": [
       [
         "🛠️",
@@ -476,7 +495,8 @@
       }
     ]
   },
-  "EE3.5": {
+  {
+    "code": "EE3.5",
     "actions": [
       [
         "✋",
@@ -499,7 +519,8 @@
       }
     ]
   },
-  "EE4.1": {
+  {
+    "code": "EE4.1",
     "actions": [
       [
         "📖",
@@ -518,7 +539,8 @@
       }
     ]
   },
-  "EE4.2": {
+  {
+    "code": "EE4.2",
     "actions": [
       [
         "📖",
@@ -537,7 +559,8 @@
       }
     ]
   },
-  "EE4.3": {
+  {
+    "code": "EE4.3",
     "actions": [
       [
         "🖼️",
@@ -632,4 +655,4 @@
       }
     ]
   }
-}
+]

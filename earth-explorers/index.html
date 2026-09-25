@@ -135,7 +135,7 @@ const storageKey='acsm-earth-explorers-visited-v1';
 let visited;try{visited=new Set(JSON.parse(localStorage.getItem(storageKey)||'[]').filter(id=>E.some(e=>e.id===id)))}catch{visited=new Set()}
 let selected=null,modalItem=null,lastFocus=null;
 const $=s=>document.querySelector(s),esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
-const CARD_GUIDE=await (await fetch('../content/earth-guides.json')).json();
+const CARD_GUIDE=Object.fromEntries((await (await fetch('../content/earth-guides.json')).json()).map(({code,...guide})=>[code,guide]));
 const VIEWS=['info','map','games'];
 function showView(id){const view=VIEWS.includes(id)?id:'info';for(const item of VIEWS)$('#view-'+item).hidden=item!==view;document.querySelectorAll('[data-view]').forEach(button=>{if(button.dataset.view===view)button.setAttribute('aria-current','page');else button.removeAttribute('aria-current')});if(view==='games')resumeGameClock();else pauseGameClock();window.scrollTo({top:0,behavior:'auto'})}
 function routeView(){showView(location.hash.slice(1))}
